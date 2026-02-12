@@ -1,5 +1,3 @@
-const apiKey = "5ee32ffc2e05e4a41f1549a1a8b4a2c2";
-
 document.getElementById("searchBtn").addEventListener("click", () => {
     const city=document.getElementById("cityInput").value;
     if(city){
@@ -29,4 +27,5 @@ async function getWeather(city) {
     }catch(error){
         document.getElementById("result").innerHTML=`<p>Error while fetching data!!</p>`;
     }
+
 }
